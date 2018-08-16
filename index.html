@@ -1,0 +1,109 @@
+<h1>BFF's Lead Posting Instructions</h1>
+<h3>Welcome to BFF's Lead Posting Instructions.  </h3>
+<br><br>
+1) DESTINATION URL: The URL you will send leads to is: https://admin.bunnyfoofoo.app/api/v1/api_users/. 
+<br><br>
+2) DATA TRANSMISSION METHOD: We accept HTTP POST method. 
+<br><br>
+3) SUCCESS OR FAILURE: We provide a response of FAILURE. In cases of API key FAILURE we provide the "Bad credentials" error. In case of data failure, for example if you haven't send us required field, you will receive an empty array.  
+<br><br>
+4) LEAD FIELDS: The following fields are the fields that we collect and store. Make specific note of the fields that are required since without that data, leads will not be received and will result in an instance of FAILURE. We do not collect or store any fields that are not in this table. Make sure you use the exact field names when passing data and be sure to urlencode your fields as well. 
+<br>
+<br>Example values:
+<br> "email": "string",
+<br> "first_name": "string",
+<br> "last_name": "string",
+<br> "website": "string",
+<br> "s1": "string",
+<br> "s2": "string",
+<br> "s3": "string",
+<br> "s4": "string",
+<br> "s5": "string"
+<br>
+
+<table>
+  <tr>
+    <td>Field Name</td>
+    <td>Description</td>
+    <td>Data Type</td>
+    <td>Required</td>
+  </tr>
+    <tr>
+    <td>email</td>
+    <td>The email address of the lead</td>
+    <td>string</td>
+    <td>YES</td>
+  </tr>
+    <tr>
+    <td>first_name</td>
+    <td>The first name of the lead</td>
+    <td>string</td>
+    <td>YES</td>
+  </tr>
+    <tr>
+    <td>last_name</td>
+    <td>The last name of the lead</td>
+    <td>string</td>
+    <td>YES</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>website</td>
+    <td>The domain of the website the lead was generated from</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>ip</td>
+    <td>The IP Address of the lead when captured</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>captured</td>
+    <td>The last name of the lead</td>
+    <td>string($date-time)</td>
+    <td>NO</td>
+  </tr>
+   </tr>
+    </tr>
+    <tr>
+    <td>lead_id</td>
+    <td>Your Universal Lead iD for the lead you are sending</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr>
+    </tr>
+    </tr>
+    <tr>
+    <td>zip</td>
+    <td>The zip code of the lead</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr>
+    </tr>
+    </tr>
+    <tr>
+    <td>state</td>
+    <td>The state the lead resides in</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr>
+    </tr>
+    </tr>
+    <tr>
+    <td>phone1</td>
+    <td>The primary phone number of the lead (no dashes)</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr> 
+  <tr>
+    <td>job</td>
+    <td>The job, industry or career search string of the lead</td>
+    <td>string</td>
+    <td>NO</td>
+  </tr> 
+</table>
+
